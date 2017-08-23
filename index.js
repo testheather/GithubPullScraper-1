@@ -32,7 +32,11 @@ app.post('/pull', function(req, res){
         catch (e) {
             console.log("Webhook received unknown event: ", e);
         }
-    })
+    });
+    //assume all went well
+    //you must send back a 200 within 20 seconds, otherwise it'll time out
+    res.sendStatus(200);
+
 });
 
 /**
