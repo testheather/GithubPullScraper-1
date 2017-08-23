@@ -40,6 +40,13 @@ app.post('/pull', function(req, res){
 });
 
 /**
+ * test function
+ */
+app.get('/pull', function(req, res){
+    res.send('Hello there. ')
+});
+
+/**
  * Processes each received pull event
  * @param event
  */
