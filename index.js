@@ -19,3 +19,16 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
 
+/**
+ * Processes each received pull event
+ * @param event
+ */
+function pullEventReceived(event) {
+
+    //store information about this event
+    let thisEvent = JSON.stringify(event);
+
+    console.log("Pull event received. ");
+    console.log(thisEvent);
+}
+
