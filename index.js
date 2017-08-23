@@ -18,6 +18,22 @@ app.set('port', (process.env.PORT || 5000));
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
+/**
+ * when webhook posts to /pull, log it
+ */
+app.post('/pull', function(req, res){
+    let data = req.body;
+
+    //iterate over each entry
+    data.entry.forEach(function(event){
+        try{
+            pullEventReceived(event);
+        }
+        catch (e) {
+            console.log("Webhook received unknown event: ", e);
+        }
+    })
+});
 
 /**
  * Processes each received pull event
