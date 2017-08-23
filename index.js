@@ -10,6 +10,7 @@ let bodyParser = require('body-parser');
 let request = require('request');
 let express = require('express');
 let app = express();
+let path = require('path');
 
 //set ports - environment variable OR localhost 5000
 app.set('port', (process.env.PORT || 5000));
