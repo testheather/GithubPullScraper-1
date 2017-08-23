@@ -6,10 +6,10 @@
 "use strict";
 
 //npm packages
-const bodyParser = require('body-parser');
-const request = require('request');
-const express = require('express');
-const app = express();
+let bodyParser = require('body-parser');
+let request = require('request');
+let express = require('express');
+let app = express();
 
 //set ports - environment variable OR localhost 5000
 app.set('port', (process.env.PORT || 5000));
