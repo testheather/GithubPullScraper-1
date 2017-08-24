@@ -2,6 +2,9 @@
   "name": "githubpullscraper",
   "description": "scraps pull requests to a github repo",
   "main": "index.js",
+  "engines":{
+    "node": "6.11.0"
+  },
   "scripts": {
     "test": "none"
   },
