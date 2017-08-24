@@ -2,7 +2,7 @@
   "name": "githubpullscraper",
   "description": "scraps pull requests to a github repo",
   "main": "index.js",
-  "engines":{
+  "engines": {
     "node": "6.11.0",
     "npm": "5.3.0"
   },
@@ -27,8 +27,10 @@
   "homepage": "https://github.com/hwensler/GithubPullScraper#readme",
   "dependencies": {
     "body-parser": "^1.17.2",
-    "express": "^4.15.3",
-    "request": "^2.81.0",
-    "path":"https://githubpullscraper.herokuapp.com"
-  }
+    "express": "^4.15.4",
+    "path": "https://githubpullscraper.herokuapp.com",
+    "request": "^2.81.0"
+  },
+  "version": "1.0.0",
+  "devDependencies": {}
 }

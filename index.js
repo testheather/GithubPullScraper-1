@@ -41,8 +41,11 @@ app.post('/pull', function(req, res){
 });
 
 /**
- * test function
+ * test functions
  */
+app.get('/', function (req, res){
+    res.send('Hi!')
+});
 app.get('/pull', function(req, res){
     res.send('Hello there. ')
 });
