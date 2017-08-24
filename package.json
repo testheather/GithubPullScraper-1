@@ -21,7 +21,7 @@
   "author": "Heather Nolis",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hwensler/FBBotJS/issues"
+    "url": "https://github.com/hwensler/GithubPullScraper/issues"
   },
   "homepage": "https://github.com/hwensler/GithubPullScraper#readme",
   "dependencies": {
