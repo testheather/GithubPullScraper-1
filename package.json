@@ -28,7 +28,7 @@
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
-    //"path": "https://githubpullscraper.herokuapp.com",
+    
     "request": "^2.81.0"
   },
   "version": "1.0.0",
