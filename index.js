@@ -67,6 +67,6 @@ function pullEventReceived(event) {
     let thisEvent = JSON.stringify(event);
 
     console.log("Pull event received. ");
-    console.log(thisEvent);
+    console.log(thisEvent.toString());
 }
 
