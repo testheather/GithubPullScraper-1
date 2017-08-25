@@ -35,9 +35,11 @@ app.get('/pull', function(req, res){
 app.post('/pull', function(req, res){
     let data = req.body;
 
+    console.log('/pull was activated.');
     //iterate over each entry
     data.entry.forEach(function(entry){
         try{
+            console.log('A pull event happened!');
             pullEventReceived(entry);
         }
         catch (e) {
