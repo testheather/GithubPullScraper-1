@@ -36,7 +36,7 @@ app.post('/pull', function(req, res){
     let data = req.body;
 
     //iterate over each entry
-    data.entry.forEach(function(event){
+    data.event.forEach(function(event){
         try{
             pullEventReceived(event);
         }
