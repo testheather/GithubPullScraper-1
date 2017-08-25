@@ -29,8 +29,7 @@
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
-    "request": "^2.81.0",
-    "path": "https://githubpullscraper.herokuapp.com"
-
+    "path": "https://githubpullscraper.herokuapp.com",
+    "request": "^2.81.0"
   }
 }

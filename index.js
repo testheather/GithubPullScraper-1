@@ -20,6 +20,16 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
 /**
+ * test functions
+ */
+app.get('/', function (req, res){
+    res.send('Hi!')
+});
+app.get('/pull', function(req, res){
+    res.send('Hello there. ')
+});
+
+/**
  * when webhook posts to /pull, log it
  */
 app.post('/pull', function(req, res){
@@ -40,14 +50,10 @@ app.post('/pull', function(req, res){
 
 });
 
-/**
- * test functions
- */
-app.get('/', function (req, res){
-    res.send('Hi!')
-});
-app.get('/pull', function(req, res){
-    res.send('Hello there. ')
+//add server
+app.listen(app.get('port'), function(){
+    //create log for heroku
+    console.log('running on port', app.get('port'))
 });
 
 /**
