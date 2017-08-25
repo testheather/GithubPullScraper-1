@@ -36,9 +36,9 @@ app.post('/pull', function(req, res){
     let data = req.body;
 
     //iterate over each entry
-    data.event.forEach(function(event){
+    data.entry.forEach(function(entry){
         try{
-            pullEventReceived(event);
+            pullEventReceived(entry);
         }
         catch (e) {
             console.log("Webhook received unknown event: ", e);
