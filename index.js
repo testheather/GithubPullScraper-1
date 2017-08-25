@@ -36,16 +36,15 @@ app.post('/pull', function(req, res){
     let data = req.body;
 
     console.log('/pull was activated.');
-    //iterate over each entry
-    data.entry.forEach(function(entry){
-        try{
-            console.log('A pull event happened!');
-            pullEventReceived(entry);
-        }
-        catch (e) {
-            console.log("Webhook received unknown event: ", e);
-        }
-    });
+
+    try{
+        console.log('A pull event happened!');
+        pullEventReceived(entry);
+    }
+    catch (e) {
+        console.log("Webhook received unknown event: ", e);
+    }
+
     //assume all went well
     //you must send back a 200 within 20 seconds, otherwise it'll time out
     res.sendStatus(200);
