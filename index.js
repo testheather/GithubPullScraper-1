@@ -58,7 +58,7 @@ app.listen(app.get('port'), function(){
 });
 
 /**
- * Processes each received pull event
+ * Processes each received pull event - currently logs entire json
  * @param event
  */
 function pullEventReceived(event) {
