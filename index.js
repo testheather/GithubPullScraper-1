@@ -64,7 +64,7 @@ app.listen(app.get('port'), function(){
 function pullEventReceived(event) {
 
 
-    console.log("Pull event received. ");
+    console.log("Pull event logged. ");
     console.log(event.toString());
 }
 
