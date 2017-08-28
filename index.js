@@ -70,8 +70,7 @@ function pullEventReceived(event) {
     if (event.action == 'opened'){
         console.log("New pull request opened by " + event.pull_request.user.login + "! ");
         console.log("Number: " + event.number);
-        console.log("ID: " + event.pull_request.event);
+        console.log("ID: " + event.pull_request.id);
     }
-    console.log(JSON.stringify(event));
 }
 
