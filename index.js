@@ -39,7 +39,7 @@ app.post('/pull', function(req, res){
 
     try{
         console.log('A pull event happened!');
-        pullEventReceived(data.entry);
+        pullEventReceived(data);
     }
     catch (e) {
         console.log("Webhook received unknown event: ", e);
