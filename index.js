@@ -65,7 +65,13 @@ function pullEventReceived(event) {
 
 
     console.log("Pull event logged. ");
-    console.log(event.action);
+
+    //only if this event opens a pull request
+    if (event.action == 'opened'){
+        console.log("New pull request opened by " + event.pull_request.user.login + "! ");
+        console.log("Number: " + event.number);
+        console.log("ID: " + event.pull_request.event);
+    }
     console.log(JSON.stringify(event));
 }
 
