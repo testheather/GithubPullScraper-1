@@ -65,6 +65,6 @@ function pullEventReceived(event) {
 
 
     console.log("Pull event logged. ");
-    console.log(event.toString());
+    console.log(event);
 }
 
